@@ -8,6 +8,7 @@
   "scripts": {
     "commit": "czg",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "postversion": "git push && git push origin --tags",
     "lint:lint-staged": "lint-staged -c ./husky/lintstagedrc.js",
     "lint:lint-pretty": "pretty-quick --staged",
     "prebuild": "rimraf dist",
@@ -29,7 +30,6 @@
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
     "reflect-metadata": "^0.1.13",
-    "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
   },
   "devDependencies": {
@@ -47,7 +47,6 @@
     "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
-    "conventional-changelog-cli": "^2.2.2",
     "cz-git": "^1.3.12",
     "czg": "^1.3.12",
     "eslint": "^8.0.1",
