@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
+
+
+[ -n "$CI"]&& exit 0;
+
+# check file name
+npm run lint:ls-lint
+
+# format pretter you change the file
+npm run lint:lint:lint-staged
+
+# pretty
+npm run lint:lint-pretty
+
