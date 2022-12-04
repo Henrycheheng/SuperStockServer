@@ -1,4 +1,4 @@
 node_modules
 /dist/
 /src/excesises
-/pnpm-lock.yaml
+# /pnpm-lock.yaml
