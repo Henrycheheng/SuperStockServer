@@ -1,0 +1,24 @@
+type CashFlow {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateCashFlowInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateCashFlowInput {
+  id: Int!
+}
+
+type Query {
+  cashFlow: [CashFlow]!
+  cashFlow(id: Int!): CashFlow
+}
+
+type Mutation {
+  createCashFlow(createCashFlowInput: CreateCashFlowInput!): CashFlow!
+  updateCashFlow(updateCashFlowInput: UpdateCashFlowInput!): CashFlow!
+  removeCashFlow(id: Int!): CashFlow
+}

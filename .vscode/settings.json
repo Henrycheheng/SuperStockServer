@@ -1,5 +1,11 @@
 {
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
-  "prettier.semi": false
+  "prettier.semi": false,
+  "editor.fontFamily": "DankMono",
+  "editor.codeLensFontFamily": "DankMono",
+  "editor.inlayHints.fontFamily": "DankMono",
+  "scm.inputFontFamily": "DankMono",
+  "debug.console.fontFamily": "DankMono",
+  "markdown.preview.fontFamily": "DankMono"
 }
