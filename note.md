@@ -2,7 +2,7 @@
 
 - 1. pnpm 安装报错
 
-  - npm config set registry https://registry.npmjs.org
+  - npm config set registry <https://registry.npmjs.org>
 
 - 2. peerDependencies
 
@@ -15,8 +15,8 @@
 ### 2022/11/19
 
 - 依赖报错的问题： 删除store下面的15版本的包的问题
+
 - pnpm安装的包的store是在node_modules/.pnpm
-  - 
 
 ## nest 一键生成 curd
 
